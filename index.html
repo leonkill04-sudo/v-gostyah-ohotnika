@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>В гостях у охотника — дичь и дикая рыба из первых рук</title>
+  <meta name="description" content="100% натуральная добыча, ветеринарный контроль и бережная разделка. Дичь и дикая рыба из первых рук.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            graphite: { DEFAULT: '#121614', deep: '#0E1110', card: '#1A1E1C' },
+            amber: { copper: '#C57D3B', hover: '#D98E4A' },
+            gold: { light: '#F3D7A4', DEFAULT: '#E5B574' },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html, body { overflow-x: hidden; }
+    body {
+      background-color: #121614;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+        radial-gradient(ellipse at top, #161b18 0%, #121614 45%, #0E1110 100%);
+      background-attachment: fixed;
+    }
+    .text-gold-gradient {
+      background-image: linear-gradient(to right, #E5B574, #F3D7A4, #C57D3B);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .btn-copper {
+      background: linear-gradient(180deg, #D98E4A 0%, #C57D3B 100%);
+      color: #1a120a;
+      box-shadow: 0 8px 24px -10px rgba(197,125,59,.7), inset 0 1px 0 rgba(255,255,255,.25);
+      transition: all .25s ease;
+    }
+    .btn-copper:hover { background: #D98E4A; transform: translateY(-1px); box-shadow: 0 12px 28px -10px rgba(217,142,74,.85); }
+    .btn-ghost {
+      border: 1px solid rgba(229,181,116,.45);
+      color: #F3D7A4;
+      background: rgba(14,17,16,.45);
+      backdrop-filter: blur(8px);
+      transition: all .25s ease;
+    }
+    .btn-ghost:hover { border-color: #E5B574; background: rgba(197,125,59,.15); }
+    .img-fallback {
+      background:
+        radial-gradient(circle at 30% 30%, rgba(229,181,116,.12), transparent 60%),
+        linear-gradient(135deg, #1f2522, #0E1110);
+    }
+    .card-img { transition: transform .6s ease; }
+    .catalog-card:hover .card-img { transform: scale(1.06); }
+    .catalog-card { transition: border-color .3s ease, transform .3s ease; }
+    .catalog-card:hover { border-color: rgba(229,181,116,.45); transform: translateY(-4px); }
+    .divider-gold { background: linear-gradient(90deg, transparent, #C57D3B, transparent); height: 1px; }
+  </style>
+</head>
+<body class="font-inter text-stone-200 antialiased">
+
+  <!-- ================= HEADER ================= -->
+  <header id="top" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0E1110]/70 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="В гостях у охотника — на главную">
+        <!-- Силуэт оленьих рогов -->
+        <svg class="h-11 w-11 text-[#E5B574]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M24 34c-4-3-7-8-7-14M17 20l-5-6M17 20l-2-9M20 27l-8-1M21 30l-6 4"/>
+          <path d="M40 34c4-3 7-8 7-14M47 20l5-6M47 20l2-9M44 27l8-1M43 30l6 4"/>
+          <path d="M24 34c2 2 4 3 8 3s6-1 8-3"/>
+          <path d="M26 36l2 12c1 5 3 8 4 8s3-3 4-8l2-12"/>
+          <path d="M22 35l-5 2M42 35l5 2"/>
+          <circle cx="28.5" cy="42" r="1" fill="currentColor"/>
+          <circle cx="35.5" cy="42" r="1" fill="currentColor"/>
+        </svg>
+        <span class="font-cinzel text-[15px] font-bold uppercase leading-tight tracking-wide text-gold-gradient sm:text-base">
+          В гостях<br>у охотника
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm text-stone-300 lg:flex">
+        <a href="#catalog" class="transition hover:text-[#E5B574]">Каталог</a>
+        <a href="#about" class="transition hover:text-[#E5B574]">О добыче</a>
+        <a href="#telegram" class="transition hover:text-[#E5B574]">Telegram-канал</a>
+        <a href="#contacts" class="transition hover:text-[#E5B574]">Контакты</a>
+      </nav>
+
+      <div class="hidden items-center gap-5 lg:flex">
+        <a href="tel:+79600000193" class="text-sm text-stone-300 transition hover:text-[#E5B574]">
+          <span class="text-stone-500">Телефон:</span> +7 (960) 000-01-93
+        </a>
+        <a href="https://t.me/+_4CcZ3Y07D1kZjky" target="_blank" rel="noopener noreferrer" class="btn-ghost inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium">
+          <i class="fa-brands fa-telegram"></i> В наш Telegram
+        </a>
+      </div>
+
+      <button id="menuBtn" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-[#E5B574] lg:hidden" aria-label="Открыть меню" aria-expanded="false">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-[#0E1110]/95 backdrop-blur-md lg:hidden">
+      <nav class="flex flex-col gap-1 px-4 py-4 text-base">
+        <a href="#catalog" class="rounded-lg px-3 py-2 hover:bg-white/5">Каталог</a>
+        <a href="#about" class="rounded-lg px-3 py-2 hover:bg-white/5">О добыче</a>
+        <a href="#telegram" class="rounded-lg px-3 py-2 hover:bg-white/5">Telegram-канал</a>
+        <a href="#contacts" class="rounded-lg px-3 py-2 hover:bg-white/5">Контакты</a>
+        <a href="tel:+79600000193" class="mt-2 px-3 py-2 text-[#E5B574]"><i class="fa-solid fa-phone mr-2"></i>+7 (960) 000-01-93</a>
+        <a href="https://t.me/+_4CcZ3Y07D1kZjky" target="_blank" rel="noopener noreferrer" class="btn-copper mt-2 inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 font-semibold">
+          <i class="fa-brands fa-telegram"></i> В наш Telegram
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="relative flex min-h-[88vh] items-center overflow-hidden pt-24 pb-16">
+      <div class="absolute inset-0 img-fallback">
+        <img src="images/hero-bg.jpg" alt="" class="h-full w-full object-cover" onerror="this.remove()">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0E1110]/70 via-[#121614]/55 to-[#121614]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(14,17,16,.7)_100%)]"></div>
+
+      <div class="relative mx-auto w-full max-w-5xl px-4 text-center sm:px-6">
+        <h1 class="font-cinzel font-bold uppercase leading-[1.1] tracking-wide">
+          <span class="block bg-gradient-to-r from-[#E5B574] via-[#F3D7A4] to-[#C57D3B] bg-clip-text text-3xl text-transparent sm:text-5xl lg:text-6xl xl:text-7xl">
+            Дичь и дикая рыба
+          </span>
+          <span class="mt-1 block bg-gradient-to-r from-[#F3D7A4] via-[#E5B574] to-[#C57D3B] bg-clip-text text-3xl text-transparent sm:text-5xl lg:text-6xl xl:text-7xl">
+            из первых рук
+          </span>
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-base text-stone-300 sm:text-lg">
+          100% натуральная добыча, ветеринарный контроль и бережная разделка
+        </p>
+
+        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <a href="#catalog" class="btn-copper inline-flex w-full items-center justify-center gap-2 rounded-lg px-7 py-3.5 font-semibold sm:w-auto">
+            Смотреть каталог
+          </a>
+          <a href="#contacts" class="btn-ghost inline-flex w-full items-center justify-center gap-2 rounded-lg px-7 py-3.5 font-medium sm:w-auto">
+            <i class="fa-solid fa-phone"></i> Связаться с нами
+          </a>
+        </div>
+
+        <div class="mx-auto mt-10 inline-flex max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-xl border border-white/10 bg-[#0E1110]/60 px-5 py-3 text-sm text-stone-300 backdrop-blur-md">
+          <span class="inline-flex items-center gap-2"><i class="fa-solid fa-leaf text-[#E5B574]"></i>100% Экологично</span>
+          <span class="hidden text-[#C57D3B] sm:inline">•</span>
+          <span class="inline-flex items-center gap-2"><i class="fa-solid fa-shield-halved text-[#E5B574]"></i>Ветеринарный контроль</span>
+          <span class="hidden text-[#C57D3B] sm:inline">•</span>
+          <span class="inline-flex items-center gap-2"><i class="fa-solid fa-box text-[#E5B574]"></i>Доставка в термобоксах</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= О ДОБЫЧЕ ================= -->
+    <section id="about" class="scroll-mt-24 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="font-cinzel text-3xl font-bold text-gold-gradient sm:text-4xl">О добыче</h2>
+          <div class="divider-gold mx-auto mt-4 w-40"></div>
+          <p class="mx-auto mt-4 max-w-2xl text-stone-400">От угодий до вашего стола — каждый этап под личным контролем охотника.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-white/10 bg-[#1A1E1C]/85 p-6 shadow-2xl backdrop-blur-md transition hover:border-[#E5B574]/40">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#C57D3B]/15 text-xl text-[#E5B574]"><i class="fa-solid fa-tree"></i></div>
+            <h3 class="font-cinzel text-lg font-semibold text-[#F3D7A4]">Чистые угодья</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-400">Добыча только в экологически чистых лесах и поймах, вдали от трасс и производств.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#1A1E1C]/85 p-6 shadow-2xl backdrop-blur-md transition hover:border-[#E5B574]/40">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#C57D3B]/15 text-xl text-[#E5B574]"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="font-cinzel text-lg font-semibold text-[#F3D7A4]">Ветеринарный контроль каждой партии</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-400">Каждая партия проходит ветеринарную экспертизу и сопровождается документами.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#1A1E1C]/85 p-6 shadow-2xl backdrop-blur-md transition hover:border-[#E5B574]/40">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#C57D3B]/15 text-xl text-[#E5B574]"><i class="fa-solid fa-utensils"></i></div>
+            <h3 class="font-cinzel text-lg font-semibold text-[#F3D7A4]">Бережная разделка и выдержка</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-400">Правильная выдержка и аккуратная ручная разделка раскрывают вкус дичи.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#1A1E1C]/85 p-6 shadow-2xl backdrop-blur-md transition hover:border-[#E5B574]/40">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#C57D3B]/15 text-xl text-[#E5B574]"><i class="fa-solid fa-snowflake"></i></div>
+            <h3 class="font-cinzel text-lg font-semibold text-[#F3D7A4]">Шоковая эко-заморозка</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-400">Быстрая глубокая заморозка сохраняет структуру мяса, сочность и пользу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= КАТАЛОГ ================= -->
+    <section id="catalog" class="scroll-mt-24 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="font-cinzel text-3xl font-bold text-gold-gradient sm:text-4xl">Каталог дичи и рыбы</h2>
+            <p class="mt-2 text-stone-400">Наличие уточняйте в Telegram — позиции обновляются ежедневно.</p>
+          </div>
+          <div id="catalogTabs" class="flex flex-wrap gap-2" role="tablist" aria-label="Фильтр каталога">
+            <button type="button" data-cat="all" role="tab">Все позиции</button>
+            <button type="button" data-cat="game" role="tab">Дичь и птица</button>
+            <button type="button" data-cat="fish" role="tab">Дикая рыба</button>
+          </div>
+        </div>
+
+        <div id="catalogGrid" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <!-- ================= TELEGRAM ================= -->
+    <section id="telegram" class="scroll-mt-24 py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-3xl border border-[#E5B574]/25 bg-[#1A1E1C]/85 p-8 shadow-2xl backdrop-blur-md sm:p-12">
+          <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#C57D3B]/20 blur-3xl"></div>
+          <div class="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#E5B574]/10 blur-3xl"></div>
+          <i class="fa-brands fa-telegram pointer-events-none absolute -bottom-10 right-6 text-[180px] text-white/[0.03] sm:text-[240px]"></i>
+
+          <div class="relative grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+            <div>
+              <span class="inline-flex items-center gap-2 rounded-full border border-[#E5B574]/30 px-3 py-1 text-xs uppercase tracking-widest text-[#E5B574]">
+                • Свежие обновления
+              </span>
+              <h2 class="mt-4 font-cinzel text-2xl font-bold text-gold-gradient sm:text-4xl">Наш Telegram-канал</h2>
+              <p class="mt-4 max-w-2xl text-base leading-relaxed text-stone-300 sm:text-lg">
+                Публикуем суточное наличие, утренний улов и принимаем заказы на оперативную доставку
+              </p>
+              <ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-stone-400">
+                <li><i class="fa-solid fa-truck-fast mr-2 text-[#E5B574]"></i>Доставка в термобоксах</li>
+                <li><i class="fa-solid fa-bell mr-2 text-[#E5B574]"></i>Ежедневное наличие</li>
+                <li><i class="fa-solid fa-bookmark mr-2 text-[#E5B574]"></i>Бронь редких позиций</li>
+              </ul>
+            </div>
+            <a href="https://t.me/+_4CcZ3Y07D1kZjky" target="_blank" rel="noopener noreferrer" class="btn-copper inline-flex w-full items-center justify-center gap-3 rounded-lg px-8 py-4 text-lg font-semibold lg:w-auto">
+              <i class="fa-brands fa-telegram text-2xl"></i> Перейти в Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contacts" class="scroll-mt-24 border-t border-white/10 bg-[#0E1110]">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div>
+        <a href="#top" class="flex items-center gap-3">
+          <svg class="h-11 w-11 text-[#E5B574]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 34c-4-3-7-8-7-14M17 20l-5-6M17 20l-2-9M20 27l-8-1M21 30l-6 4"/>
+            <path d="M40 34c4-3 7-8 7-14M47 20l5-6M47 20l2-9M44 27l8-1M43 30l6 4"/>
+            <path d="M24 34c2 2 4 3 8 3s6-1 8-3"/>
+            <path d="M26 36l2 12c1 5 3 8 4 8s3-3 4-8l2-12"/>
+            <path d="M22 35l-5 2M42 35l5 2"/>
+            <circle cx="28.5" cy="42" r="1" fill="currentColor"/>
+            <circle cx="35.5" cy="42" r="1" fill="currentColor"/>
+          </svg>
+          <span class="font-cinzel text-base font-bold uppercase leading-tight tracking-wide text-gold-gradient">В гостях<br>у охотника</span>
+        </a>
+        <p class="mt-4 max-w-xs text-sm text-stone-400">Дичь и дикая рыба из первых рук — честная добыча для ценителей.</p>
+        <a href="https://t.me/+_4CcZ3Y07D1kZjky" target="_blank" rel="noopener noreferrer" aria-label="Наш Telegram-канал" class="mt-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#E5B574]/40 text-xl text-[#E5B574] transition hover:border-[#E5B574] hover:bg-[#C57D3B]/15">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </div>
+
+      <div>
+        <h3 class="font-cinzel text-lg font-semibold text-[#F3D7A4]">Контакты</h3>
+        <ul class="mt-4 space-y-3 text-sm text-stone-300">
+          <li><a href="tel:+79600000193" class="transition hover:text-[#E5B574]"><i class="fa-solid fa-phone mr-2 text-[#E5B574]"></i>+7 (960) 000-01-93</a></li>
+          <li><a href="tel:+79694588850" class="transition hover:text-[#E5B574]"><i class="fa-solid fa-phone mr-2 text-[#E5B574]"></i>+7 (969) 458-88-50</a></li>
+          <li><a href="https://t.me/+_4CcZ3Y07D1kZjky" target="_blank" rel="noopener noreferrer" class="transition hover:text-[#E5B574]"><i class="fa-brands fa-telegram mr-2 text-[#E5B574]"></i>Telegram-канал</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-cinzel text-lg font-semibold text-[#F3D7A4]">График работы</h3>
+        <p class="mt-4 flex items-start gap-2 text-sm text-stone-300">
+          <i class="fa-regular fa-clock mt-0.5 text-[#E5B574]"></i>
+          <span>Прием звонков и заказов: ежедневно с 08:00 до 22:00</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-xs text-stone-500 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+        <p>Информация на сайте не является публичной офертой. Наличие и доставка согласуются индивидуально.</p>
+        <p class="shrink-0">© 2026 «В гостях у охотника»</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const TELEGRAM_URL = 'https://t.me/+_4CcZ3Y07D1kZjky';
+
+    const CATALOG = [
+      { category: 'game', title: 'Дикий заяц',        image: 'images/hare.png',      badge: 'Полевая дичь' },
+      { category: 'game', title: 'Косуля',            image: 'images/roe-deer.png',  badge: 'Лесная дичь' },
+      { category: 'game', title: 'Фазан',             image: 'images/pheasant.png',  badge: 'Дикая птица' },
+      { category: 'game', title: 'Перепёлка',         image: 'images/quail.png',     badge: 'Дикая птица' },
+      { category: 'game', title: 'Дикая утка',        image: 'images/duck.png',      badge: 'Водоплавающая дичь' },
+      { category: 'game', title: 'Дикий гусь',        image: 'images/goose.png',     badge: 'Водоплавающая дичь' },
+      { category: 'game', title: 'Вальдшнеп',         image: 'images/woodcock.png',  badge: 'Боровая дичь' },
+      { category: 'game', title: 'Вяхирь / Витютень', image: 'images/pigeon.png',    badge: 'Лесная птица' },
+      { category: 'game', title: 'Чирок',             image: 'images/teal.png',      badge: 'Водоплавающая дичь' },
+      { category: 'game', title: 'Серый дрозд',       image: 'images/thrush.png',    badge: 'Боровая дичь' },
+      { category: 'fish', title: 'Щука',              image: 'images/pike.png',      badge: 'Речной хищник' },
+      { category: 'fish', title: 'Судак',             image: 'images/zander.png',    badge: 'Речной улов' },
+      { category: 'fish', title: 'Сазан',             image: 'images/sazan.png',     badge: 'Дикая рыба' },
+      { category: 'fish', title: 'Карп',              image: 'images/carp.png',      badge: 'Речной улов' },
+      { category: 'fish', title: 'Карась',            image: 'images/crucian.png',   badge: 'Дикая рыба' },
+      { category: 'fish', title: 'Окунь',             image: 'images/perch.png',     badge: 'Речной хищник' },
+      { category: 'fish', title: 'Тарань',            image: 'images/taran.png',     badge: 'Азовский улов' },
+    ];
+
+    const grid = document.getElementById('catalogGrid');
+    const tabs = document.getElementById('catalogTabs');
+
+    function cardTemplate(item) {
+      return `
+        <article class="catalog-card group flex flex-col bg-[#1A1E1C]/85 border border-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl" data-category="${item.category}">
+          <div class="img-fallback relative aspect-[4/3] overflow-hidden">
+            <img src="${item.image}" alt="${item.title}" loading="lazy" class="card-img h-full w-full object-cover" onerror="this.style.display='none'">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1A1E1C] via-transparent to-transparent"></div>
+            <span class="absolute right-3 top-3 rounded-md border border-white/15 bg-[#0E1110]/75 px-2.5 py-1 text-xs font-medium text-stone-200 backdrop-blur-md">${item.badge}</span>
+          </div>
+          <div class="flex flex-1 items-center justify-between gap-3 p-4 sm:p-5">
+            <h3 class="font-cinzel text-lg font-bold uppercase leading-tight text-stone-100">${item.title}</h3>
+            <a href="${TELEGRAM_URL}" target="_blank" rel="noopener noreferrer" class="btn-copper inline-flex shrink-0 items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold">
+              Заказать
+            </a>
+          </div>
+        </article>`;
+    }
+
+    function render(category) {
+      const items = category === 'all' ? CATALOG : CATALOG.filter(i => i.category === category);
+      grid.innerHTML = items.map(cardTemplate).join('');
+      tabs.querySelectorAll('button').forEach(b => {
+        const active = b.dataset.cat === category;
+        b.className = 'rounded-lg px-4 py-2 text-sm font-medium transition ' +
+          (active ? 'btn-copper' : 'btn-ghost');
+        b.setAttribute('aria-selected', active);
+      });
+    }
+
+    tabs.addEventListener('click', e => {
+      const btn = e.target.closest('button[data-cat]');
+      if (btn) render(btn.dataset.cat);
+    });
+    render('all');
+
+    // Мобильное меню
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('hidden') === false;
+      menuBtn.setAttribute('aria-expanded', open);
+      menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark text-lg"></i>' : '<i class="fa-solid fa-bars text-lg"></i>';
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.innerHTML = '<i class="fa-solid fa-bars text-lg"></i>';
+    }));
+  </script>
+</body>
+</html>
